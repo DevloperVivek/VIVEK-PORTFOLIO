@@ -23,8 +23,8 @@ const Home = () => {
             Greetings! I'm Vivek Raut, a 2022 graduate from Savitribai Phule
             Pune University, with a degree of Computer Science & Passion for Web
             Development. I strive to create visually appealing and
-            high-performing products that prioritize user experience, delivering
-            delightful online experiences.
+            high-performing products that prioritize user experience &
+            delivering delightful online experiences.
           </p>
           <div>
             <Link

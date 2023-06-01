@@ -1,5 +1,4 @@
 import React from "react";
-// import HeroImage from "../assets/Newbanner.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 const Home = () => {
@@ -40,13 +39,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        {/* <div>
-          <img
-            src={HeroImage}
-            alt="Banner"
-            className="rounded-3xl mx-auto w-1/2 md:1/3"
-          />
-        </div> */}
       </div>
     </div>
   );

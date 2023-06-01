@@ -13,7 +13,7 @@ const SocialLinks = () => {
           <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/vivek-raut-7b3b39210",
+      href: "https://www.linkedin.com/in/thevivekraut",
       style: "rounded-tr-md",
     },
     {

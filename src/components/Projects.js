@@ -9,25 +9,25 @@ const Projects = () => {
     {
       id: 1,
       src: restaurant,
-      url: "https://react-restaurant-website-three.vercel.app/",
+      url: "https://react-meals-website.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/React-Restaurant-Website.git",
     },
     {
       id: 2,
       src: ecomin,
-      url: "https://vivekecom.vercel.app/login",
+      url: "https://ecomin.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/Ecomin-main.git",
     },
     {
       id: 3,
       src: expense,
-      url: "https://react-expense-tracker-neon-one.vercel.app/",
+      url: "https://track-expenses.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/React-Expense-Tracker.git",
     },
     {
       id: 4,
       src: mailclient,
-      url: "https://vivekmailbox.vercel.app/",
+      url: "https://mailboxclient.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/React-MailBox.git",
     },
   ];

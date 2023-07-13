@@ -15,8 +15,8 @@ const Projects = () => {
     {
       id: 2,
       src: ecomin,
-      url: "https://ecomin.vercel.app/",
-      gitUrl: "https://github.com/DevloperVivek/Ecomin-main.git",
+      url: "https://react-ecom-website.vercel.app/",
+      gitUrl: "https://github.com/DevloperVivek/REACT-E-COMMERCE-WEBSITE.git",
     },
     {
       id: 3,
@@ -27,8 +27,8 @@ const Projects = () => {
     {
       id: 4,
       src: mailclient,
-      url: "https://mailboxclient.vercel.app/",
-      gitUrl: "https://github.com/DevloperVivek/React-MailBox.git",
+      url: "https://react-mailclient.vercel.app/",
+      gitUrl: "https://github.com/DevloperVivek/REACT-MAIL-CLIENT.git",
     },
   ];
 

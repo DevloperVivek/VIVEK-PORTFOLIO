@@ -27,7 +27,7 @@ const Projects = () => {
     {
       id: 4,
       src: mailclient,
-      url: "https://react-mailclient.vercel.app/",
+      url: "https://react-mailclient-website.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/REACT-MAIL-CLIENT.git",
     },
   ];

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -44,25 +43,6 @@ const Contact = () => {
               Submit
             </button>
           </form>
-        </div>
-
-        <div className="flex justify-center mt-8">
-          <a
-            href="https://www.linkedin.com/in/thevivekraut/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-300 mr-4"
-          >
-            <FaLinkedin size={30} />
-          </a>
-          <a
-            href="https://github.com/DevloperVivek"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-300"
-          >
-            <FaGithub size={30} />
-          </a>
         </div>
       </div>
     </div>

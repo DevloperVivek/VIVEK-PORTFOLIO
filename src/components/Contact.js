@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -25,27 +26,43 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            ></input>
+            />
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            ></input>
+            />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
               className="p-2 bg-transparent border-2 rounded-md focus:outline-none text-white"
-            ></textarea>
+            />
 
-            <button
-              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110
-             duration-300"
-            >
+            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Submit
             </button>
           </form>
+        </div>
+
+        <div className="flex justify-center mt-8">
+          <a
+            href="https://www.linkedin.com/in/thevivekraut/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300 mr-4"
+          >
+            <FaLinkedin size={30} />
+          </a>
+          <a
+            href="https://github.com/DevloperVivek"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300"
+          >
+            <FaGithub size={30} />
+          </a>
         </div>
       </div>
     </div>

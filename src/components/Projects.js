@@ -3,6 +3,7 @@ import restaurant from "../assets/images/projects/restaurant.png";
 import ecomin from "../assets/images/projects/ecomin.png";
 import expense from "../assets/images/projects/expense.png";
 import mailclient from "../assets/images/projects/mailclient.png";
+import photolab from "../assets/images/projects/photolab.png";
 
 const Projects = () => {
   const projects = [
@@ -29,6 +30,12 @@ const Projects = () => {
       src: mailclient,
       url: "https://react-mailclient-website.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/REACT-MAIL-CLIENT.git",
+    },
+    {
+      id: 5,
+      src: photolab,
+      url: "https://thevivekraut-photolab.vercel.app/",
+      gitUrl: "https://github.com/DevloperVivek/REACT-PHOTOLAB-WEBSITE.git",
     },
   ];
 

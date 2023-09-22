@@ -9,9 +9,9 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: restaurant,
-      url: "https://react-meals-website.vercel.app/",
-      gitUrl: "https://github.com/DevloperVivek/React-Restaurant-Website.git",
+      src: mailclient,
+      url: "https://react-mailclient-website.vercel.app/",
+      gitUrl: "https://github.com/DevloperVivek/REACT-MAILCLIENT-WEBSITE.git",
     },
     {
       id: 2,
@@ -27,9 +27,9 @@ const Projects = () => {
     },
     {
       id: 4,
-      src: mailclient,
-      url: "https://react-mailclient-website.vercel.app/",
-      gitUrl: "https://github.com/DevloperVivek/REACT-MAIL-CLIENT.git",
+      src: restaurant,
+      url: "https://react-meals-website.vercel.app/",
+      gitUrl: "https://github.com/DevloperVivek/React-Restaurant-Website.git",
     },
     {
       id: 5,

@@ -1,4 +1,6 @@
 import React from "react";
+import hargharsolar from "../assets/images/projects/hargharsolar.png";
+import codesimple from "../assets/images/projects/codesimple.png";
 import restaurant from "../assets/images/projects/restaurant.png";
 import ecomin from "../assets/images/projects/ecomin.png";
 import expense from "../assets/images/projects/expense.png";
@@ -9,33 +11,45 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: mailclient,
-      url: "https://react-mailclient-website.vercel.app/",
-      gitUrl: "https://github.com/DevloperVivek/REACT-MAILCLIENT-WEBSITE.git",
+      src: hargharsolar,
+      url: "https://hargharsolarindore.org/",
+      gitUrl: "https://github.com/DevloperVivek/Har-Ghar-Solar.git",
     },
     {
       id: 2,
+      src: codesimple,
+      url: "https://codesimple.co/",
+      gitUrl: "https://github.com/DevloperVivek",
+    },
+    {
+      id: 3,
       src: ecomin,
       url: "https://react-ecom-website.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/REACT-E-COMMERCE-WEBSITE.git",
     },
     {
-      id: 3,
+      id: 4,
+      src: photolab,
+      url: "https://thevivekraut-photolab.vercel.app/",
+      gitUrl: "https://github.com/DevloperVivek/REACT-PHOTOLAB-WEBSITE.git",
+    },
+    {
+      id: 5,
+      src: mailclient,
+      url: "https://react-mailclient-website.vercel.app/",
+      gitUrl: "https://github.com/DevloperVivek/REACT-MAILCLIENT-WEBSITE.git",
+    },
+    {
+      id: 6,
       src: expense,
       url: "https://track-expenses.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/React-Expense-Tracker.git",
     },
     {
-      id: 4,
+      id: 7,
       src: restaurant,
       url: "https://react-meals-website.vercel.app/",
       gitUrl: "https://github.com/DevloperVivek/React-Restaurant-Website.git",
-    },
-    {
-      id: 5,
-      src: photolab,
-      url: "https://thevivekraut-photolab.vercel.app/",
-      gitUrl: "https://github.com/DevloperVivek/REACT-PHOTOLAB-WEBSITE.git",
     },
   ];
 

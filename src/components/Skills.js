@@ -1,42 +1,47 @@
 import React from "react";
 import css from "../assets/skills/css.png";
 import firebase from "../assets/skills/firebase.png";
-import gitHub from "../assets/skills/gitHub.png";
+import gitHub from "../assets/skills/github.png";
 import html from "../assets/skills/html.png";
 import javascripts from "../assets/skills/js.png";
 import react from "../assets/skills/react.png";
+import nextjs from "../assets/skills/nextjs.png";
 import tailwind from "../assets/skills/tailwind.png";
+import ts from "../assets/skills/ts.png";
+import nodejs from "../assets/skills/nodejs.png";
+import materialui from "../assets/skills/materialui.png";
+import chakraui from "../assets/skills/chakraui.png";
 
 const Skills = () => {
   const skill = [
     {
       id: 1,
-      src: react,
-      title: "React",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 2,
-      src: javascripts,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 3,
       src: html,
       title: "HTML",
       style: "shadow-orange-500",
     },
     {
-      id: 4,
+      id: 2,
       src: css,
       title: "CSS",
       style: "shadow-blue-500",
     },
     {
+      id: 3,
+      src: javascripts,
+      title: "JavaScript",
+      style: "shadow-yellow-500",
+    },
+    {
+      id: 4,
+      src: react,
+      title: "React",
+      style: "shadow-blue-500",
+    },
+    {
       id: 5,
-      src: tailwind,
-      title: "TailWind",
+      src: ts,
+      title: "TypeScript",
       style: "shadow-sky-500",
     },
     {
@@ -49,7 +54,37 @@ const Skills = () => {
       id: 7,
       src: gitHub,
       title: "GitHub",
-      style: "shadow-white bg-white text-black",
+      style: "shadow-gray-500",
+    },
+    {
+      id: 8,
+      src: tailwind,
+      title: "TailWind",
+      style: "shadow-sky-500",
+    },
+    {
+      id: 9,
+      src: materialui,
+      title: "Material UI",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 10,
+      src: chakraui,
+      title: "Chakra UI",
+      style: "shadow-gray-500",
+    },
+    {
+      id: 11,
+      src: nodejs,
+      title: "NodeJS",
+      style: "shadow-green-500",
+    },
+    {
+      id: 12,
+      src: nextjs,
+      title: "Next JS",
+      style: "shadow-white",
     },
   ];
 

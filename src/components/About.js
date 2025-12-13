@@ -1,54 +1,3 @@
-// import React from "react";
-
-// const About = () => {
-//   return (
-//     <div
-//       name="about"
-//       className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
-//     >
-//       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-//         <div className="pb-8">
-//           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-//             About
-//           </p>
-//         </div>
-
-//         <p className="text-xl text-left mt-5">
-//           {/* Step into the world of possibilities! I'm Vivek Raut,
-//           <br /> A Graduate (2022) from Savitribai Phule Pune University
-//         </p>
-//         <p className="text-xl text-left mt-10">
-//           A Frontend Developer, With a wealth of experience, Delivering Visually
-//           Striking and Engaging digital experiences. There Is something I want
-//           to Show, Have A Look of My Work! */}
-//           🚀 Step into the World of Possibilities with Vivek Raut ! Hello there!
-//           I'm Vivek Raut, a Computer Science graduate (2022) from Savitribai
-//           Phule Pune University, where I earned an A+ grade, showcasing my
-//           dedication to excellence. 💻 Frontend Developer Extraordinaire I
-//           thrive on creating visually striking and engaging digital experiences.
-//           My journey in the tech world is driven by a passion for turning ideas
-//           into reality, one line of code at a time. 🌐 React JS Maestro at
-//           CoderFarm Currently, I'm channeling my expertise as a React JS
-//           developer at CoderFarm, contributing efficiently to the realm of web
-//           development. It's not just about writing code; it's about crafting
-//           solutions that resonate with users and drive positive experiences. 🛠️
-//           Skills Snapshot: React JS Javascript Typescript Html Css Firebase
-//           Github 🔍 Always Eager to Learn In this ever-evolving tech landscape,
-//           I stay at the forefront by embracing new challenges and technologies.
-//           I believe that continuous learning is the key to innovation, and I'm
-//           committed to staying ahead of the curve. 👥 Let's Connect! I'm
-//           enthusiastic about connecting with like-minded professionals,
-//           collaborators, and tech enthusiasts. If you share a passion for
-//           creating impactful digital experiences or want to explore potential
-//           collaborations, feel free to reach out.
-//         </p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default About;
-
 import React from "react";
 
 const About = () => {
@@ -59,29 +8,33 @@ const About = () => {
     >
       <div className="max-w-screen-lg mx-auto">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About
-          </p>
+          <p className="text-4xl font-bold inline">About</p>
+          <div className="w-16 h-[2px] bg-cyan-500/60 mt-3" />
         </div>
 
-        <div className="text-lg mt-5">
+        <div className="text-lg mt-5 space-y-6 text-gray-300 leading-relaxed">
           <p>
-            🚀 Step into the World of Possibilities with Vivek Raut ! Hello
-            there! I'm Vivek Raut, a Computer Science graduate (2022) from
-            Savitribai Phule Pune University, where I earned an A+ grade,
-            showcasing my dedication to excellence. As a Frontend Developer, I
-            specialize in creating visually striking and engaging digital
-            experiences. Currently, I'm leveraging my expertise in React JS at
-            CoderFarm, contributing efficiently to the realm of web development.
+            I am a Software Developer (Frontend) with hands-on experience
+            building scalable, production-grade web applications for SaaS and
+            enterprise platforms. My work focuses on creating clean UI
+            architectures, managing complex application state, and delivering
+            reliable, high-performance user experiences.
           </p>
-          <p className="mt-10">
-            🛠️ Skills Snapshot: React JS, Javascript, Typescript, HTML, CSS,
-            Firebase, Github. In this ever-evolving tech landscape, I stay at
-            the forefront by embracing new challenges and technologies. I
-            believe that continuous learning is the key to innovation. Let's
-            connect! I'm enthusiastic about collaborating with like-minded
-            professionals and tech enthusiasts to create impactful digital
-            experiences.
+
+          <p>
+            Over the past few years, I have contributed to multiple
+            business-critical systems including enterprise dashboards, B2B SaaS
+            products, internal tools, and animation-rich marketing platforms. I
+            work extensively with modern frontend technologies such as React,
+            TypeScript, Redux, and Tailwind CSS, and collaborate closely with
+            backend and product teams to deliver complete solutions.
+          </p>
+
+          <p>
+            I value code quality, scalability, and thoughtful UX, and I enjoy
+            solving real-world problems through well-structured frontend
+            systems. I am always open to learning, improving, and collaborating
+            with teams that build meaningful and impactful digital products.
           </p>
         </div>
       </div>

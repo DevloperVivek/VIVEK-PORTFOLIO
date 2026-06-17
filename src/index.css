@@ -1,13 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: 'Raleway', sans-serif;
-    }
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* 'smooth' without Lenis = browser jank on every scroll event. Use auto. */
+    scroll-behavior: auto;
+    background-color: #030712;
+    /* Prevent horizontal scroll from causing layout recalcs */
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #030712;
+    overflow-x: hidden;
+    /* Hint to compositor: the body scrolls natively */
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================================================
+   GPU LAYER PROMOTION — prevents repaint on scroll
+   ============================================================ */
+/* Promote fixed backgrounds & navbars to own compositing layer
+   so they don't trigger repaint of the scroll layer below */
+.fixed, [class*="fixed"] {
+  transform: translateZ(0);
+}
+
+/* Sections get paint containment so off-screen sections
+   don't participate in the layout/paint of visible sections */
+section {
+  contain: layout style;
+}
+
+/* ============================================================
+   Custom Scrollbar
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ============================================================
+   Cyber Terminal Cursor
+   ============================================================ */
+.terminal-cursor {
+  display: inline-block;
+  width: 6px;
+  height: 15px;
+  background-color: #00D4FF;
+  animation: cursor-blink 1s infinite;
+  will-change: opacity;
+}
+
+@keyframes cursor-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }

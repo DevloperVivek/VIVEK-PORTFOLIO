@@ -17,11 +17,13 @@ export const ContactTerminal: React.FC = () => {
   const [step, setStep] = useState<"cmd" | "name" | "email" | "message">("cmd");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const terminalEndRef = useRef<HTMLDivElement>(null);
+  const terminalContainerRef = useRef<HTMLDivElement>(null);
 
-  // Auto scroll to bottom of terminal
+  // Auto scroll to bottom of terminal without scrolling the entire page
   useEffect(() => {
-    terminalEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (terminalContainerRef.current) {
+      terminalContainerRef.current.scrollTop = terminalContainerRef.current.scrollHeight;
+    }
   }, [history]);
 
   const addLog = (text: string, type: "input" | "system" | "success" | "error" = "system") => {
@@ -255,7 +257,10 @@ export const ContactTerminal: React.FC = () => {
           </div>
 
           {/* Terminal Console Logs */}
-          <div className="flex-grow p-6 font-mono text-xs space-y-2.5 overflow-y-auto max-h-[320px]">
+          <div 
+            ref={terminalContainerRef}
+            className="flex-grow p-6 font-mono text-xs space-y-2.5 overflow-y-auto max-h-[320px] scroll-smooth"
+          >
             {history.map((line, idx) => {
               let textClass = "text-gray-300";
               if (line.type === "input") textClass = "text-white font-medium";
@@ -267,7 +272,6 @@ export const ContactTerminal: React.FC = () => {
                 </p>
               );
             })}
-            <div ref={terminalEndRef} />
           </div>
 
           {/* Preset Commands Helper (Visual Clicks) */}
@@ -325,7 +329,6 @@ export const ContactTerminal: React.FC = () => {
                     ? "john@example.com"
                     : "Describe the project opportunities..."
                 }
-                autoFocus
               />
             </div>
             <button

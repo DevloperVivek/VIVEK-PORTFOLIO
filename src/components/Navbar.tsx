@@ -4,9 +4,10 @@ import { User, Briefcase, Network, FolderCode, Cpu, PhoneCall, FileText } from "
 const SECTIONS = ["hero", "about", "journey", "ecosystem", "projects", "stack", "contact"];
 
 export const Navbar: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [activeSection, setActiveSection] = useState("hero");
   const rafId = useRef<number>(0);
+  const lastScrollY = useRef<number>(0);
 
   const navLinks = [
     { name: "About", href: "#about", icon: <User className="w-4 h-4" /> },
@@ -22,7 +23,21 @@ export const Navbar: React.FC = () => {
     const handleScroll = () => {
       cancelAnimationFrame(rafId.current);
       rafId.current = requestAnimationFrame(() => {
-        setIsScrolled(window.scrollY > 50);
+        const currentScrollY = window.scrollY;
+        
+        // Always show if near the top
+        if (currentScrollY < 50) {
+          setIsVisible(true);
+        } else {
+          // Hide when scrolling down, show when scrolling up
+          if (currentScrollY > lastScrollY.current) {
+            setIsVisible(false); // scrolling down
+          } else {
+            setIsVisible(true);  // scrolling up
+          }
+        }
+        
+        lastScrollY.current = currentScrollY;
       });
     };
 
@@ -56,10 +71,8 @@ export const Navbar: React.FC = () => {
     <>
       {/* Desktop Top Navbar */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-40 hidden md:flex items-center justify-between w-full px-8 py-5 transition-all duration-500 ${
-          isScrolled
-            ? "max-w-4xl mx-auto top-4 bg-[rgba(15,23,42,0.85)] border border-white/10 backdrop-blur-md rounded-full py-3 px-6 shadow-lg shadow-black/30"
-            : "bg-transparent py-5"
+        className={`fixed top-5 left-0 right-0 mx-auto z-50 hidden md:flex items-center justify-between w-[85%] lg:w-[70%] max-w-5xl px-6 py-3 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] rounded-full border border-white/10 bg-[rgba(15,23,42,0.6)] backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] ${
+          isVisible ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
         }`}
       >
         <a href="#hero" className="flex items-center space-x-2 group">
